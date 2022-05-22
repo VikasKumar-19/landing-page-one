@@ -1,0 +1,24 @@
+@font-face {
+  font-family: myLandingPageFontOne;
+  src: url('./fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2');
+}
+@font-face {
+  font-family: myLandingPageFontTwo;
+  src: url('./fonts/fa-brands-400.woff2');
+}
+@font-face {
+  font-family: myLandingPageFontThree;
+  src: url('./fonts/fa-solid-900.woff2');
+}
+@font-face {
+  font-family: myLandingPageFontFour;
+  src: url('./fonts/u-4l0qyriQwlOrhSvowK_l5-eR7lXff4jvzDP3WG.woff2');
+}
+@font-face {
+  font-family: myLandingPageFontFive;
+  src: url('./fonts/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
