@@ -223,7 +223,7 @@
             Full Story
           </a>
         </article>
-        <article class="px-6 text-justify flex flex-col border-solid border-t-2 border-[#d3d5d7]">
+        <article class="px-6 text-justify flex flex-col border-solid border-y-2 border-[#d3d5d7]">
           <div
             class="time__line container flex justify-center items-center gap-10 pb-7 pt-10"
           >
@@ -249,14 +249,63 @@
             hic cupiditate doloremque et quae laborum a cum, cumque aspernatur,
             ipsam excepturi eaque?
           </p>
-          <a class="text-center border-2 border-solid border-[#1e252d] uppercase px-2 py-3 font-myLandingPageFontOne font-bold text-[#1e252d] mt-8 mb-10" href="#">
+          <a class="text-center border-2 border-solid border-[#1e252d] uppercase px-2 py-3 font-myLandingPageFontOne font-bold text-[#1e252d] mt-8 mb-6" href="#">
             Full Story
           </a>
         </article>
-        <div class="pagination__container">
-          
+        <div class="pagination__container py-7">
+          <a href="#" class="block text-sm mx-auto w-fit border-2 border-solid border-[#c7c7c7] font-bold py-2 px-4 text-[#545658] font-myLandingPageFontOne">NEXT&nbsp;&nbsp; &gt;</a>
         </div>  
       </section>
+      <section class="contact__section bg-[#eeeeee]">
+        <div class="form__container">
+          <form class="grid grid-cols-1 px-6 gap-5 text-[#545658] text-sm py-8">
+            <div class="flex flex-col gap-2">
+              <label class="uppercase font-myLandingPageFontOne" for="name">Name</label>
+              <input class="outline-none p-2" id="name" type="text" name="name" >
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="uppercase font-myLandingPageFontOne" for="email">Email</label>
+              <input class="outline-none p-2" id="email" type="email" name="email">
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="uppercase font-myLandingPageFontOne" for="message">Message</label>
+              <textarea class="outline-none p-2" name="message" id="message" cols="20" rows="6"></textarea>
+            </div>
+            <button class="uppercase font-myLandingPageFontOne border-2 border-solid border-[#1e252d] px-2 py-3 font-bold mt-3" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="address_contact_info_container text-sm text-[#7b7b7c]">
+          <div class="border-t-2 border-solid border-[#c7c8c8] px-6 py-7 flex gap-2">
+            <span class="w-[10ch] flex-shrink-0 uppercase font-myLandingPageFontOne">Address</span>
+            <p class="font-myLandingPageFontFive font-semibold">1234 Somewhere Road #87265 Nashville, TN 00000-0000</p>
+          </div>
+          <div class="border-t-2 border-solid border-[#c7c8c8] px-6 py-7 flex gap-2">
+            <span class="w-[10ch] flex-shrink-0 uppercase font-myLandingPageFontOne">Phone</span>
+            <p class="font-myLandingPageFontFive font-semibold">(452) 000-0000</p>
+          </div>
+          <div class="border-t-2 border-solid border-[#c7c8c8] px-6 py-7 flex gap-2">
+            <span class="w-[10ch] flex-shrink-0 uppercase font-myLandingPageFontOne">Email</span>
+            <p class="font-myLandingPageFontFive font-semibold">info@untitled.dev</p>
+          </div>
+          <div class="border-t-2 border-solid border-[#c7c8c8] px-6 py-7 flex gap-2">
+            <span class="w-[10ch] flex-shrink-0 uppercase font-myLandingPageFontOne pt-1">Social</span>
+            <div class="flex gap-3">
+              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/twitter.png" alt="twitter icon"></span>
+              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/facebook.png" alt="facebook icon"></span>
+              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/instagram.png" alt="instagram icon"></span>
+              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/github.png" alt="github icon"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="rights__and__credits flex gap-3 flex-col py-20 px-4 items-center justify-center bg-[#1e252d] font-myLandingPageFontOne text-[#909498] text-sm">
+          <span class="uppercase">&copy; Untitled</span>
+          <span class="uppercase">Design: HTML5 UP</span>
+          <span class="uppercase">Demo Images: Unsplash</span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
