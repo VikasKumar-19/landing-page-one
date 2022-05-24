@@ -11,7 +11,7 @@
     <div class="bg-hero-pattern bg-no-repeat bg-top h-[120vh] w-full">
       <section class="h-full flex flex-col bg-[#212931d9]">
         <nav class="nav__container flex justify-end">
-          <div class="nav__menu w-fit flex gap-3 items-center py-4 px-6">
+          <div class="nav__menu w-fit flex gap-3 items-center py-4 px-6 cursor-pointer">
             <div class="bread__crumb flex flex-col gap-1">
               <div class="w-4 h-0.5 bg-white rounded-sm"></div>
               <div class="w-4 h-0.5 bg-white rounded-sm"></div>
@@ -291,14 +291,32 @@
           <div class="border-t-2 border-solid border-[#c7c8c8] px-6 py-7 flex gap-2">
             <span class="w-[10ch] flex-shrink-0 uppercase font-myLandingPageFontOne pt-1">Social</span>
             <div class="flex gap-3">
-              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/twitter.png" alt="twitter icon"></span>
-              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/facebook.png" alt="facebook icon"></span>
-              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/instagram.png" alt="instagram icon"></span>
-              <span class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/github.png" alt="github icon"></span>
+              <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/twitter.png" alt="twitter icon"></a>
+              <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/facebook.png" alt="facebook icon"></a>
+              <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/instagram.png" alt="instagram icon"></a>
+              <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/github.png" alt="github icon"></a>
             </div>
           </div>
         </div>
       </section>
+      <aside class="hidden">
+        <div class="mobile__menu_design fixed right-0 top-0 h-full w-4/6 bg-[#ffffff]">
+          <div class="flex justify-end p-3">
+            <img class="close__menu_btn w-5 cursor-pointer" src="./images/icons8-close.svg" alt="close icon">
+          </div>
+          <div class="font-myLandingPageFontOne text-sm uppercase font-bold px-7 py-4">
+            <a href="#"><p class="border-b-2 border-solid border-[#e4e4e4] py-4 px-2 pt-0">This is Massively</p></a>
+            <a href="#"><p class="border-b-2 border-solid border-[#e4e4e4] py-4 px-2">Generic Page</p></a>
+            <a href="#"><p class="py-4 px-2">Elements Reference</p></a>
+          </div>
+          <div class="flex gap-3 px-7 py-4">
+            <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/twitter.png" alt="twitter icon"></a>
+            <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/facebook.png" alt="facebook icon"></a>
+            <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/instagram.png" alt="instagram icon"></a>
+            <a href="#" class="p-1 rounded-full border-2 border-solid border-[#c7c8c8]"><img class="h-4" src="./images/github.png" alt="github icon"></a>
+          </div>
+        </div>
+      </aside>
       <footer>
         <div class="rights__and__credits flex gap-3 flex-col py-20 px-4 items-center justify-center bg-[#1e252d] font-myLandingPageFontOne text-[#909498] text-sm">
           <span class="uppercase">&copy; Untitled</span>
@@ -307,5 +325,16 @@
         </div>
       </footer>
     </div>
+    <script>
+      const closeMenuBtn = document.querySelector('.close__menu_btn');
+      const asideBar = document.querySelector("aside");
+      const navMenu = document.querySelector(".nav__menu");
+      closeMenuBtn.addEventListener("click", ()=>{
+        asideBar.classList.toggle("hidden")
+      })
+      navMenu.addEventListener("click", ()=>{
+        asideBar.classList.toggle("hidden")
+      })
+    </script>
   </body>
 </html>
